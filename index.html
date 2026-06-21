@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
     
-    <script type="module" crossorigin src="./assets/index-53ecd9e4.js"></script>
-    <link rel="stylesheet" href="./assets/index-a197a0f6.css">
+    <script type="module" crossorigin src="./assets/index-f407f376.js"></script>
+    <link rel="stylesheet" href="./assets/index-809df8ef.css">
   </head>
   <body class="page">
     <div class="page__content">
@@ -61,8 +61,9 @@
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-.,!?]+$"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки препинания и пробелы"
               />
+              <span class="popup_error" id="user-name-error"></span>
             </label>
-            <span class="popup_error" id="user-name-error"></span>
+
             <label class="popup__label">
               <input
                 type="text"
@@ -74,8 +75,9 @@
                 minlength="2"
                 maxlength="200"
               />
+              <span class="popup_error" id="user-description-error"></span>
             </label>
-            <span class="popup_error" id="user-description-error"></span>
+
             <button
               type="submit"
               class="button popup__button popup_button_disabled"
@@ -106,8 +108,9 @@
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-.,!?]+$"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки препинания и пробелы"
               />
+              <span class="popup_error" id="place-name-error"></span>
             </label>
-            <span class="popup_error" id="place-name-error"></span>
+
             <label class="popup__label">
               <input
                 type="url"
@@ -117,8 +120,9 @@
                 placeholder="Ссылка на картинку"
                 required
               />
+              <span class="popup_error" id="place-link-error"></span>
             </label>
-            <span class="popup_error" id="place-link-error"></span>
+
             <button
               type="submit"
               class="button popup__button popup_button_disabled"
@@ -170,8 +174,9 @@
                 placeholder="Ссылка на изображение"
                 required
               />
+              <span class="popup_error" id="user-avatar-error"></span>
             </label>
-            <span class="popup_error" id="user-avatar-error"></span>
+            
             <button
               type="submit"
               class="button popup__button popup_button_disabled"
@@ -226,5 +231,9 @@
       <li class="popup__list-item popup__list-item_type_badge"></li>
     </template>
     
+    <template id="popup-info-title-template">
+      <h4 class="popup__text"></h4>
+    </template>
+
   </body>
 </html>
